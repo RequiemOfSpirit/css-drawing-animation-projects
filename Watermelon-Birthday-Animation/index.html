@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title></title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+  <div id="top-text">pssst. try clicking me</div>
+  <div id="watermelon-container" onclick="triggerBirthday()">
+    <div id="background-patch"></div>
+    <div class="watermelon-body" id="watermelon-base"></div>
+    <div class="watermelon-body" id="watermelon-shell"></div>
+    <div class="face-container" id="anticipation-face-container">
+      <!-- TODO: Redraw with SVGs -->
+      <img class="watermelon-feature anticipation-eye" id="anticipation-eye-left" src="assets/eye.png" />
+      <img class="watermelon-feature anticipation-eye" id="anticipation-eye-right" src="assets/eye.png" />
+      <div class="watermelon-feature" id="anticipation-mouth"></div>
+    </div>
+    <div class="face-container" id="celebration-face-container">
+      <div class="watermelon-feature celebration-eye" id="celebration-eye-left"></div>
+      <div class="watermelon-feature celebration-eye" id="celebration-eye-right"></div>
+      <div class="watermelon-feature" id="celebration-mouth"></div>
+    </div>
+  </div>
+  <div id="confetti-container"></div>
+</body>
+
+<script type="text/javascript" src="./index.js"></script>
+
+</html>
