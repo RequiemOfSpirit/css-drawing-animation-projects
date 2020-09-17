@@ -34,7 +34,7 @@ function triggerBirthday() {
   document.querySelector("div#watermelon-container").style.animation = "celebration 1s ease-out infinite alternate";
   
   let topText = document.querySelector("div#top-text");
-  topText.innerHTML = "HAPPY BIRTHDAY GABAROONIE_!!!"
+  topText.innerHTML = "HAPPY BIRTHDAY GAB!!!"
   topText.style.fontStyle = "normal";
   topText.style.fontSize = "3.5em";
   topText.style.backgroundImage = "linear-gradient(to right, red, orange , yellow, green, cyan, blue, violet)";
