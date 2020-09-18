@@ -13,6 +13,7 @@ const SEED_LOCATIONS = [ // Represents positions in percentages
 ];
 
 const CONFETTI_COUNT = 400;
+let birthdayTriggered = false;
 
 function createSeed(id, topPosition, leftPosition) {
   let seed = document.createElement("div");
@@ -28,6 +29,10 @@ SEED_LOCATIONS.forEach((position, index) => {
 });
 
 function triggerBirthday() {
+  if (birthdayTriggered) {
+    return;
+  }
+
   document.querySelector("div#anticipation-face-container").style.opacity = 0;
   document.querySelector("div#celebration-face-container").style.opacity = 1;
 
@@ -48,6 +53,8 @@ function triggerBirthday() {
   // Confetti
   burstConfetti();
   dropConfetti();
+
+  birthdayTriggered = true;
 }
 
 // TODO: Move all confetti logic into a Confetti Class
