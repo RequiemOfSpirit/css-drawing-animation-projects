@@ -1,0 +1,59 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img#background {
+  position: absolute;
+  filter: blur(2px);
+  z-index: -100;
+  transform: scale(1.5) translateY(-15px);
+}
+
+#card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#text-container {
+  font-family: "Purisa";
+  text-align: center;
+  font-size: 1.15rem;
+  padding: 20px;
+
+  width: 480px;
+  height: 890px;
+  background-color: #ffffffc3;
+  border: 1px solid #aaa;
+  box-shadow: 1px 1px 5px #777, 3px 3px 8px #a52f7477;
+}
+
+img.emote {
+  width: 32px;
+  vertical-align: bottom;
+}
+
+/* Title */
+h1 {
+  font-size: 3rem;
+  margin: 0.8rem 0 0.5rem;
+  color: #2e9b18;
+  line-height: 4.5rem;
+}
+
+/* Exclamation */
+h1 span { 
+  font-size: 3.4rem;
+}
+
+p {
+  margin: 10px 0;
+}
+
+p#sign {
+  text-align: right;
+  margin: 10px 30px 15px 15px;
+  font-size: 1.3rem;
+}
